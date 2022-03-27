@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const MainHeader = () => {
   return (
-    <div className="bg-[#ee4d2d] h-24 text-white flex justify-evenly fixed w-full z-10">
+    <div className="bg-[#ee5031] h-24 text-white flex justify-evenly fixed w-full z-10">
       <Link className=" flex flex-row pt-7" to='/'>
         <ShoppingBagIcon fontSize="large" />
         <span className="text-2xl mt-1">mini-Shopee</span>

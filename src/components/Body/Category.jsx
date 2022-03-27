@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+// import { useEffect, useState } from "react"
 import CategoryItem from "./CategoryItem"
 
 const DUMMY_CATEGORY = [
