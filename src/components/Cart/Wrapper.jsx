@@ -3,7 +3,7 @@
 
 
 const Wrapper = (props) => {
-  return <div className="container mx-auto w-50 bg-white">
+  return <div className="max-w-6xl mx-auto">
       {props.children}
     </div>;
 };

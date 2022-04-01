@@ -4,7 +4,7 @@ import ProductCategory from "./ProductCategory"
 import ProductDescription from "./ProductDescription"
 
 
-const ProductPages = () => {
+const Pages = () => {
   return (
     <Routes>
         <Route path="/" element={<Product/>} />
@@ -14,4 +14,4 @@ const ProductPages = () => {
   )
 }
 
-export default ProductPages
+export default Pages

@@ -1,14 +1,32 @@
-
-import { BrowserRouter } from 'react-router-dom';
-import './App.css';
-import MainBody from './components/Body/MainBody';
-import MainHeader from './components/Header/MainHeader';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import MainBody from "./components/Body/MainBody";
+import Cart from "./components/Cart/Cart";
+import MainHeader from "./components/Header/MainHeader";
 
 function App() {
   return (
     <BrowserRouter>
-      <MainHeader />
-      <MainBody />
+      <Routes>
+        <Route
+          path="*"
+          element={
+            <>
+              <MainHeader />
+              <MainBody />
+            </>
+          }
+        />
+        <Route
+          path="/cart"
+          element={
+            <>
+              <MainHeader />
+              <Cart />
+            </>
+          }
+        />
+      </Routes>
     </BrowserRouter>
   );
 }

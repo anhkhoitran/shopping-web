@@ -14,9 +14,9 @@ const MainHeader = () => {
         <input type="text" className="w-[700px] text-black h-[40px] "></input>
         <SearchIcon fontSize="large" />
       </div>
-      <div className="pt-7">
+      <Link to={'/cart'} className="pt-7">
         <ShoppingCartIcon fontSize="large" />
-      </div>
+      </Link>
     </div>
   );
 };
