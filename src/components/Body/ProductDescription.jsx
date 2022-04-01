@@ -53,7 +53,7 @@ const ProductDescription = () => {
         </div>
         
 
-        <CartButton onClick={console.log('a')} />
+        <CartButton onClick={() => addItemHandler(description)} />
    
         <p className="mt-7 text-justify">{description.description}</p>
       </div>

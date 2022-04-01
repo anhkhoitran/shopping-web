@@ -6,16 +6,6 @@ import { useSelector } from 'react-redux';
 const Cart = () => {
 
   const cartItems = useSelector(state => state.cart.items);
-  // const cartItems = [
-  //   {
-  //     id: 1,
-  //     title: 'a',
-  //     image: 'aa',
-  //     price: 21,
-  //     quantity: 1,
-  //     total: 1
-  //   }
-  // ]
 
 
 
