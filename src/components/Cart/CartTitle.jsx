@@ -1,17 +1,25 @@
-import Wrapper from "./Wrapper";
+
 
 const CartTitle = () => {
   return (
-    <Wrapper>
-      <div className="w-full bg-white relative top-[5rem]">
-        <ul className="flex flex-row justify-around py-3">
-          <li>Product</li>
-          <li>Name</li>
-          <li>Price</li>
-          <li>Quantity</li>
-        </ul>
+
+      <div className="max-w-[75rem] bg-white relative top-[5rem] left-[10rem]">
+        <div className="flex flex-row py-3">
+          <div className="w-[300px] text-center">
+            <h2>Product</h2>
+          </div>
+          <div className="w-[400px] ">
+            <h2>Name</h2>
+          </div>
+          <div className="w-[200px] text-center">
+            <h2>Price</h2>
+          </div>
+          <div className="w-[300px] text-center">
+            <h2>Quantity</h2>
+          </div>
+        </div>
       </div>
-    </Wrapper>
+
   );
 };
 

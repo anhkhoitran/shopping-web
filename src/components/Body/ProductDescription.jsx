@@ -15,6 +15,7 @@ const ProductDescription = () => {
         id: item.id,
         title: item.title,
         price: item.price,
+        image: item.image,
       })
     );
   };
@@ -30,10 +31,6 @@ const ProductDescription = () => {
       setDescription(results);
     }
   };
-
-
-
- 
 
   useEffect(() => {
     getDescription(params.id);
@@ -51,10 +48,9 @@ const ProductDescription = () => {
             ${description.price}
           </p>
         </div>
-        
 
         <CartButton onClick={() => addItemHandler(description)} />
-   
+
         <p className="mt-7 text-justify">{description.description}</p>
       </div>
     </div>
