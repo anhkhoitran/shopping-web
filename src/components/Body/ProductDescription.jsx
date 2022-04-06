@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useParams } from "react-router-dom";
+import SuccessAdd from "../Notification/SuccessAdd";
 import { cartAction } from "../store/cart-slice";
 import CartButton from "./CartButton";
 
 const ProductDescription = () => {
   const [description, setDescription] = useState([]);
+  const [isAdded, setIsAdded] = useState(false);
   const params = useParams();
   const dispatch = useDispatch();
 
@@ -18,6 +20,12 @@ const ProductDescription = () => {
         image: item.image,
       })
     );
+
+    setIsAdded(true);
+
+    setTimeout(() => {
+      setIsAdded(false);
+    },1000)
   };
 
   const getDescription = async (id) => {
@@ -37,22 +45,25 @@ const ProductDescription = () => {
   }, [params.id]);
 
   return (
-    <div className=" flex flex-row justify-center mt-20 gap-[60px]">
-      <div>
-        <img src={description.image} alt="" className="h-[400px]" />
-      </div>
-      <div className="text-2xl max-w-xl">
-        <p className="font-bold">{description.title}</p>
-        <div className="bg-slate-100 h-[70px] mt-2">
-          <p className="font-bold text-orange-500 pl-4 py-3 text-4xl">
-            ${description.price}
-          </p>
+    <div>
+      <div className=" flex flex-row justify-center mt-20 gap-[60px]">
+        <div>
+          <img src={description.image} alt="" className="h-[400px] " />
         </div>
+        <div className="text-2xl max-w-xl">
+          <p className="font-bold">{description.title}</p>
+          <div className="bg-slate-100 h-[70px] mt-2">
+            <p className="font-bold text-orange-500 pl-4 py-3 text-4xl">
+              ${description.price}
+            </p>
+          </div>
 
-        <CartButton onClick={() => addItemHandler(description)} />
+          <CartButton onClick={() => addItemHandler(description)} />
 
-        <p className="mt-7 text-justify">{description.description}</p>
+          <p className="mt-7 text-justify">{description.description}</p>
+        </div>
       </div>
+      {isAdded && <SuccessAdd />}
     </div>
   );
 };

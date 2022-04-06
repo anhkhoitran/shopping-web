@@ -5,13 +5,14 @@ import CartCheckout from "./CartCheckout";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
+  const totalAllPrice = useSelector((state) => state.cart.totalAllPrice);
 
   return (
-    <div className="top-[96px] relative bg-slate-100 h-[100vh]">
+    <div className="top-[96px] relative bg-white h-[100vh]">
       <div className="flex flex-row">
         <div>
           <CartTitle />
-          <div className="relative top-[6rem] w-[77rem] left-[10rem] h-[45rem] overflow-auto">
+          <div className="relative top-[5rem] w-[77rem] left-[6rem] h-[45rem] overflow-auto">
             {cartItems.map((item) => (
               <CartItems
                 key={item.id}
@@ -27,7 +28,7 @@ const Cart = () => {
             ))}
           </div>
         </div>
-        <CartCheckout  />
+        <CartCheckout totalPrice={totalAllPrice.toFixed(2)} />
       </div>
     </div>
   );

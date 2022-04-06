@@ -1,6 +1,6 @@
 const CartCheckout = (props) => {
   return (
-    <div className="h-[20rem] w-[25rem] bg-white relative top-[5rem] left-[12rem]">
+    <div className="h-[20rem] w-[25rem] bg-slate-100 relative top-[5rem] left-[10rem]">
       <div className="border-b-2 h-[4rem]">
         <h2 className="pt-[20px] pl-[2rem]">Order Summary</h2>
       </div>
@@ -11,13 +11,13 @@ const CartCheckout = (props) => {
           <h1>Shipping</h1>
         </div>
         <div>
-          <p>${props.cart}</p>
+          <p>${props.totalPrice}</p>
           <p>Free</p>
         </div>
       </div>
-      <div className="flex flex-row gap-[12rem] pl-[2rem] pt-5">
+      <div className="flex flex-row gap-[188px] pl-[2rem] pt-5 bg-slate-200 h-[4rem]">
         <h2>Total</h2>
-        <h2>${props.cart}</h2>
+        <h2>${props.totalPrice}</h2>
       </div>
     </div>
   );
