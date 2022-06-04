@@ -7,8 +7,9 @@ const CategoryItem = (props) => {
       {data.map((item) => {
         return (
           <Link to={`/category/${item.name.toLowerCase()}`} key={item.id}>
-            <div className="mx-4 border-2 px-4 py-4 bg-white">
-              <h1>{item.name}</h1>
+            <div className="mx-4 border-2 px-4 pt-5 bg-white h-[150px] w-[120px] text-center rounded">
+              <img src={item.img} alt="category image" className="h-[56px] w-[42px] mx-auto " />
+              <h1 className="">{item.name}</h1>
             </div>
           </Link>
         );

@@ -1,22 +1,31 @@
 // import { useEffect, useState } from "react"
-import CategoryItem from "./CategoryItem"
+import CategoryItem from "./CategoryItem";
+import electronic from '../../asset/electronic.jpg';
+import jewelery from '../../asset/jewelery.jpg';
+import men_clothing from '../../asset/men_clothing.jpg';
+import women_clothing from '../../asset/women_clothing.jpg';
 
-const DUMMY_CATEGORY = [
+
+const CATEGORY = [
     {
         id: "1",
         name: 'Electronics',
+        img: electronic,
     },
     {
         id: "2",
         name: "Jewelery",
+        img: jewelery,
     },
     {
         id: "3",
         name: "Men's clothing",
+        img: men_clothing,
     },
     {
         id: "4",
         name: "Women's clothing",
+        img: women_clothing,
     },
 
 ]
@@ -38,7 +47,7 @@ const Category = () => {
   return (
     <div>
         <h1 className="text-center mb-4">Category</h1>
-        <CategoryItem category={DUMMY_CATEGORY} />
+        <CategoryItem category={CATEGORY} />
     </div>
   )
 }

@@ -6,7 +6,7 @@ const EmptyCart = () => {
       <h1>Your cart is still empty!</h1>
       <Link to={"/"}>
         <button className="mt-4 border-2 px-4 py-4 rounded-md bg-[#ee5031] text-white">
-          Back to shopping!
+          <p>Back to shopping!</p>
         </button>
       </Link>
     </div>

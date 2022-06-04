@@ -46,7 +46,7 @@ const ProductDescription = () => {
 
   return (
     <div>
-      <div className=" flex flex-row justify-center mt-20 gap-[60px]">
+      <div className=" flex flex-row justify-center mt-20 gap-[60px] pb-[4rem]">
         <div>
           <img src={description.image} alt="" className="h-[400px] " />
         </div>
@@ -60,7 +60,7 @@ const ProductDescription = () => {
 
           <CartButton onClick={() => addItemHandler(description)} />
 
-          <p className="mt-7 text-justify">{description.description}</p>
+          <p className="mt-7 text-justify text-lg">{description.description}</p>
         </div>
       </div>
       {isAdded && <SuccessAdd />}

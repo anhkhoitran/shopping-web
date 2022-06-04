@@ -5,7 +5,6 @@ import CartCheckout from "./CartCheckout";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
-  const totalAllPrice = useSelector((state) => state.cart.totalAllPrice);
 
   return (
     <div className="top-[96px] relative bg-white h-[100vh]">
@@ -28,7 +27,7 @@ const Cart = () => {
             ))}
           </div>
         </div>
-        <CartCheckout totalPrice={totalAllPrice.toFixed(2)} />
+        <CartCheckout />
       </div>
     </div>
   );

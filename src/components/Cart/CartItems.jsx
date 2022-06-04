@@ -1,11 +1,12 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { cartAction } from "../store/cart-slice";
-
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
 
 const CartItems = (props) => {
   const { id, title, price, image, total, quantity } = props.item;
   const dispatch = useDispatch();
-  const cart = useSelector(state => state.cart.items);
+  // const cart = useSelector(state => state.cart.items);
 
 
   const addItemHandler = () => {
@@ -22,18 +23,18 @@ const CartItems = (props) => {
         <img src={image} alt="" className=" mx-auto scale-50" />
       </div>
       <div className=" w-[400px]">
-        <h2>{title}</h2>
+        <p>{title}</p>
       </div>
       <div className="w-[150px] text-center">
-        <h2>${price}</h2>
+        <p>${price}</p>
       </div>
-      <div className="w-[200px] flex flex-row justify-center gap-4">
-        <button onClick={removeItemHandler}>-</button>
-        <h2>{quantity}</h2>
-        <button onClick={addItemHandler}>+</button>
+      <div className="w-[200px] flex flex-row justify-center gap-4 items-center">
+        <button onClick={removeItemHandler}><RemoveIcon fontSize="medium"/></button>
+        <p>{quantity}</p>
+        <button onClick={addItemHandler}><AddIcon fontSize="medium"/></button>
       </div>
       <div className="w-[150px] text-center">
-        ${total.toFixed(2)}
+        <p>${total.toFixed(2)}</p>
       </div>
     </div>
   );

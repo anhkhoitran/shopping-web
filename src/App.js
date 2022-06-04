@@ -8,15 +8,12 @@ import EmptyCart from "./components/Cart/EmptyCart";
 import MainHeader from "./components/Header/MainHeader";
 
 function App() {
-
-  const cartItems = useSelector(state => state.cart.items);
+  const cartItems = useSelector((state) => state.cart.items);
   const [isEmpty, setIsEmpty] = useState(true);
-
 
   useEffect(() => {
     setIsEmpty(cartItems.length !== 0 ? false : true);
-  }, [cartItems])
-
+  }, [cartItems]);
 
   return (
     <BrowserRouter>
@@ -35,7 +32,7 @@ function App() {
           element={
             <>
               <MainHeader />
-              {!isEmpty ? <Cart /> : <EmptyCart /> }
+              {!isEmpty ? <Cart /> : <EmptyCart />}
             </>
           }
         />

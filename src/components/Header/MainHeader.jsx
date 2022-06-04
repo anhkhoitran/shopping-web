@@ -13,7 +13,7 @@ const MainHeader = () => {
     <div className="bg-[#ee5031] h-24 text-white flex justify-evenly fixed w-full z-10">
       <Link className=" flex flex-row pt-7" to="/">
         <ShoppingBagIcon fontSize="large" />
-        <span className="text-2xl mt-1">mini-Shopee</span>
+        <p className="text-2xl mt-1">Shopaa</p>
       </Link>
       <div className="pt-7">
         <input type="text" className="w-[700px] text-black h-[40px] "></input>
