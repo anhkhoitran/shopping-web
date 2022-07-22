@@ -6,7 +6,7 @@ const CartButton = (props) => {
     <div>
       <button
       type="button"
-        className="bg-[#ee5031] px-3 py-3 rounded-md text-white mt-5 hover:bg-[#f55f42] flex items-center gap-3 "
+        className="bg-rose-500 px-3 py-3 rounded-md text-white mt-5 hover:bg-rose-400 flex items-center gap-3 "
         onClick={props.onClick}
       >
         <AddShoppingCartIcon />

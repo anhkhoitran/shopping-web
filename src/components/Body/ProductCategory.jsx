@@ -24,7 +24,7 @@ const ProductCategory = () => {
   }, [params.type]);
 
   return (
-    <div className="pt-[50px] mx-auto grid grid-cols-4 gap-5 text-center pb-10">
+    <div className="pt-[50px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 text-center pb-10">
       {catProduct.map((item) => {
         return (
           <Link
@@ -32,7 +32,7 @@ const ProductCategory = () => {
             className="border-solid border-2 w-[400px] mx-auto "
             key={item.id}
           >
-            <img className="h-[250px]  mx-auto mt-2" src={item.image} alt="" />
+            <img className="scale-75 h-[250px] mx-auto mt-2" src={item.image} alt="" />
             <p>{item.title}</p>
           </Link>
         );

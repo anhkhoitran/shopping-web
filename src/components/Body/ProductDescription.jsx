@@ -46,14 +46,14 @@ const ProductDescription = () => {
 
   return (
     <div>
-      <div className=" flex flex-row justify-center mt-20 gap-[60px] pb-[4rem]">
+      <div className=" flex flex-col items-center lg:flex-row lg:justify-center mt-20 gap-[60px] pb-[4rem]">
         <div>
-          <img src={description.image} alt="" className="h-[400px] " />
+          <img src={description.image} alt="" className="h-[400px] scale-75" />
         </div>
         <div className="text-2xl max-w-xl">
           <p className="font-bold">{description.title}</p>
           <div className="bg-slate-100 h-[70px] mt-2">
-            <p className="font-bold text-orange-500 pl-4 py-3 text-4xl">
+            <p className="font-bold text-rose-500 pl-4 py-3 text-4xl">
               ${description.price}
             </p>
           </div>

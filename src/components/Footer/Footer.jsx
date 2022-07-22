@@ -8,19 +8,19 @@ import EmailIcon from "@mui/icons-material/Email";
 import payment from "../../asset/kindpng_440249.png";
 const Footer = () => {
   return (
-    <div className="bg-slate-50 h-[17rem]  w-full text-center mt-[20px]">
-      <div className="flex justify-center gap-[10rem] text-left pt-7  border-t-orange-500 border-t-4  ">
+    <div className="bg-slate-50 h-[25rem] lg:h-[17rem]  w-full text-center mt-[20px]">
+      <div className="flex justify-center gap-[9rem] text-left px-5 pt-7 border-t-rose-500 border-t-4  ">
         {/* Section 1 */}
 
         <div>
           <h1 className="mb-1">Customer Services</h1>
           <ul>
-            <li className="hover:text-orange-600 cursor-pointer">Help Center</li>
-            <li className="hover:text-orange-600 cursor-pointer">Shopaa Blog</li>
-            <li className="hover:text-orange-600 cursor-pointer">Shopaa Mall</li>
-            <li className="hover:text-orange-600 cursor-pointer">Shopping Instruction</li>
-            <li className="hover:text-orange-600 cursor-pointer">Delivery</li>
-            <li className="hover:text-orange-600 cursor-pointer">Guarantee Policy</li>
+            <li className="hover:text-rose-500 cursor-pointer">Help Center</li>
+            <li className="hover:text-rose-500 cursor-pointer">Shopaa Blog</li>
+            <li className="hover:text-rose-500 cursor-pointer">Shopaa Mall</li>
+            <li className="hover:text-rose-500 cursor-pointer">Shopping Instruction</li>
+            <li className="hover:text-rose-500 cursor-pointer">Delivery</li>
+            <li className="hover:text-rose-500 cursor-pointer">Guarantee Policy</li>
           </ul>
         </div>
 
@@ -29,10 +29,10 @@ const Footer = () => {
         <div>
           <h1 className="mb-1">About us</h1>
           <ul>
-            <li className="hover:text-orange-600 cursor-pointer">About Shopaa</li>
-            <li className="hover:text-orange-600 cursor-pointer">Jobs</li>
-            <li className="hover:text-orange-600 cursor-pointer">Terms</li>
-            <li className="hover:text-orange-600 cursor-pointer">Policy</li>
+            <li className="hover:text-rose-500 cursor-pointer">About Shopaa</li>
+            <li className="hover:text-rose-500 cursor-pointer">Jobs</li>
+            <li className="hover:text-rose-500 cursor-pointer">Terms</li>
+            <li className="hover:text-rose-500 cursor-pointer">Policy</li>
           </ul>
         </div>
 
@@ -43,15 +43,15 @@ const Footer = () => {
           <ul>
             <li className="flex gap-1">
               <FacebookIcon /> 
-              <p className="hover:text-orange-600 cursor-pointer">Facebook</p> 
+              <p className="hover:text-rose-500 cursor-pointer">Facebook</p> 
             </li>
             <li className="flex gap-1">
               <InstagramIcon /> 
-              <p className="hover:text-orange-600 cursor-pointer">Instagram</p> 
+              <p className="hover:text-rose-500 cursor-pointer">Instagram</p> 
             </li>
             <li className="flex gap-1">
               <LinkedInIcon /> 
-              <p className="hover:text-orange-600 cursor-pointer">LinkedIn</p> 
+              <p className="hover:text-rose-500 cursor-pointer">LinkedIn</p> 
             </li>
           </ul>
         </div>

@@ -7,7 +7,7 @@ const CartCheckout = () => {
 
 
   return (
-    <div className="h-[20rem] w-[25rem] bg-slate-100 relative top-[5rem] left-[10rem]">
+    <div className="h-[20rem] w-[25rem] bg-slate-100 relative top-[5rem] ml-5 mt-5 -translate-x-3 ">
       <div className="border-b-2 h-[4rem]">
         <h1 className="pt-[20px] pl-[2rem]">Order Summary</h1>
       </div>

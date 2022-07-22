@@ -9,7 +9,7 @@ const Product = () => {
     if (check) {
       setProducts(JSON.parse(check));
     } else {
-      const getProduct = async (type) => {
+      const getProduct = async () => {
         const data = await fetch("https://fakestoreapi.com/products?limit=20");
         const results = await data.json();
         localStorage.setItem('all-product', JSON.stringify(results))
@@ -20,7 +20,7 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="pt-[50px] mx-auto grid grid-cols-4 gap-5 text-center">
+    <div className="pt-[50px] grid grid-cols-2 lg:grid-cols-4 gap-3 text-center">
       {products.map((item) => {
         return (
           <Link 
@@ -28,7 +28,7 @@ const Product = () => {
             className="border-solid border-2 w-[400px] mx-auto "
             key={item.id}
           >
-            <img className="h-[250px]  mx-auto mt-2" src={item.image} alt="" />
+            <img className="h-[250px] mx-auto mt-2" src={item.image} alt="" />
             <p>{item.title}</p>
           </Link>
         );

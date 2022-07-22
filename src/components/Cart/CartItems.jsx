@@ -18,17 +18,17 @@ const CartItems = (props) => {
   };
 
   return (
-    <div className="flex flex-row h-[260px] items-center border-solid border-b-2 max-w-[75rem] bg-white ">
+    <div className="flex flex-row h-[260px] items-center border-solid border-b-2 max-w-[400px] lg:max-w-[75rem] bg-white ">
       <div className="w-[300px]">
         <img src={image} alt="" className=" mx-auto scale-50" />
       </div>
-      <div className=" w-[400px]">
+      <div className=" w-[300px] lg:w-[400px]">
         <p>{title}</p>
       </div>
       <div className="w-[150px] text-center">
         <p>${price}</p>
       </div>
-      <div className="w-[200px] flex flex-row justify-center gap-4 items-center">
+      <div className="w-[200px] flex flex-col-reverse lg:flex-row justify-center gap-1 lg:gap-4 items-center">
         <button onClick={removeItemHandler}><RemoveIcon fontSize="medium"/></button>
         <p>{quantity}</p>
         <button onClick={addItemHandler}><AddIcon fontSize="medium"/></button>
