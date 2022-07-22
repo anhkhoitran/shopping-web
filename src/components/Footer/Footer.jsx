@@ -9,7 +9,7 @@ import payment from "../../asset/kindpng_440249.png";
 const Footer = () => {
   return (
     <div className="bg-slate-50 h-[25rem] lg:h-[17rem]  w-full text-center mt-[20px]">
-      <div className="flex justify-center gap-[9rem] text-left px-5 pt-7 border-t-rose-500 border-t-4  ">
+      <div className="flex justify-center gap-[3rem] lg:gap-[9rem] text-left px-5 pt-7 border-t-rose-500 border-t-4  ">
         {/* Section 1 */}
 
         <div>

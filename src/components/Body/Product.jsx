@@ -20,7 +20,7 @@ const Product = () => {
   }, []);
 
   return (
-    <div className="pt-[50px] grid grid-cols-2 lg:grid-cols-4 gap-3 text-center">
+    <div className="pt-[50px] grid grid-cols-1 lg:grid-cols-4 gap-2 text-center">
       {products.map((item) => {
         return (
           <Link 
