@@ -1,4 +1,4 @@
-import { BsCartPlus } from "react-icons/bs";
+
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 const CartButton = (props) => {
