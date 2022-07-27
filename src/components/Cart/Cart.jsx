@@ -7,11 +7,11 @@ const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
 
   return (
-    <div className="top-[96px] relative bg-white h-[100vh]">
-      <div className="flex flex-col items-center lg:items-start lg:flex-row lg:justify-center translate-x-2">
+    <div className="top-[96px] relative bg-white h-screen">
+      <div className="flex flex-col items-center lg:items-start lg:flex-row lg:justify-center ">
         <div>
           <CartTitle />
-          <div className="relative top-[5rem] max-w-[400px] lg:max-w-[77rem] h-[45rem] overflow-auto">
+          <div className="relative top-[5rem] max-w-[350px] lg:max-w-[77rem] h-[45rem] overflow-auto">
             {cartItems.map((item) => (
               <CartItems
                 key={item.id}

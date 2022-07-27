@@ -46,7 +46,7 @@ const ProductDescription = () => {
 
   return (
     <div>
-      <div className=" flex flex-col items-center lg:flex-row lg:justify-center mt-20 gap-[60px] pb-[4rem]">
+      <div className=" flex flex-col items-center lg:flex-row lg:justify-center mt-20 gap-[60px] pb-[4rem] max-w-[300px] mx-auto md:max-w-full">
         <div>
           <img src={description.image} alt="" className="h-[400px] scale-75" />
         </div>

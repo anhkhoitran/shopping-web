@@ -8,8 +8,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import payment from "../../asset/kindpng_440249.png";
 const Footer = () => {
   return (
-    <div className="bg-slate-50 h-[25rem] lg:h-[17rem]  w-full text-center mt-[20px]">
-      <div className="flex justify-center gap-[3rem] lg:gap-[9rem] text-left px-5 pt-7 border-t-rose-500 border-t-4  ">
+    <div className="bg-slate-50 h-[42rem] md:h-[17rem]  w-full text-center mt-[20px]">
+      <div className="grid grid-cols-2 md:flex justify-center gap-[3rem] lg:gap-[9rem] text-left px-5 pt-7 border-t-rose-500 border-t-4  ">
         {/* Section 1 */}
 
         <div>
@@ -38,7 +38,7 @@ const Footer = () => {
 
         {/* Section 3 */}
 
-        <div>
+        <div className="col-span-2">
           <h1 className="mb-1">Follow us</h1>
           <ul>
             <li className="flex gap-1">
@@ -58,7 +58,7 @@ const Footer = () => {
 
         {/* Section 4 */}
 
-        <div>
+        <div className="col-span-2">
           <h1 className="mb-1">Contact</h1>
           <ul>
             <li>

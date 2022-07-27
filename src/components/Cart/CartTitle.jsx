@@ -1,6 +1,6 @@
 const CartTitle = () => {
   return (
-    <div className="max-w-[400px] lg:max-w-[75rem] bg-white relative top-[5rem]  border-b-2">
+    <div className="max-w-[350px] lg:max-w-[75rem] bg-white relative top-[5rem]  border-b-2">
       <div className="flex flex-row py-3">
         <div className="w-[300px] text-center">
           <p>Product</p>

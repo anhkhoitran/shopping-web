@@ -24,15 +24,15 @@ const ProductCategory = () => {
   }, [params.type]);
 
   return (
-    <div className="pt-[50px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-5 text-center pb-10">
+    <div className="pt-[50px]  grid grid-cols-1  lg:grid-cols-4 gap-5 text-center pb-10 max-w-[1650px] mx-auto">
       {catProduct.map((item) => {
         return (
           <Link
             to={`/description/${item.id}`}
-            className="border-solid border-2 w-[400px] mx-auto "
+            className="border-solid border-2 w-[300px] md:w-[400px] mx-auto "
             key={item.id}
           >
-            <img className="scale-75 h-[250px] mx-auto mt-2" src={item.image} alt="" />
+            <img className="scale-50 md:scale-100 md:h-[250px] mx-auto mt-2" src={item.image} alt="" />
             <p>{item.title}</p>
           </Link>
         );

@@ -18,7 +18,7 @@ const CartItems = (props) => {
   };
 
   return (
-    <div className="flex flex-row h-[260px] items-center border-solid border-b-2 max-w-[400px] lg:max-w-[75rem] bg-white ">
+    <div className="flex flex-row h-[260px] items-center border-solid border-b-2 max-w-[350px] lg:max-w-[75rem] bg-white ">
       <div className="w-[300px]">
         <img src={image} alt="" className=" mx-auto scale-50" />
       </div>
