@@ -1,12 +1,19 @@
-# Getting Started with Create React App
+# E-commerce website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+A shopping website with some features such as: Add items to cart, Delete items from cart, Edit product quantity, View product detail.
 
-### `npm start`
+## Technologies
+
+ReactJS, Redux Toolkit, TailwindCSS, Material-UI.
+
+## Demo
+
+[Click here](https://shopaa-anhkhoitran.netlify.app) to view the demo version.
+
+<!-- ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -67,4 +74,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
